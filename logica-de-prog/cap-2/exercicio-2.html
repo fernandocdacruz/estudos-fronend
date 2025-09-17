@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenda de Veículos JS</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Revenda de Veículos JS</h1>
+        <p>Veículo: <input type="text" id="inVeiculo"></p>
+        <p>Preço R$: <input type="text" id="inPreco"></p>
+        <input type="button" value="Ver Promoção" id="btnPromocao">
+        <p id="outRest1"></p>
+        <p id="outRest2"></p>   
+        <p id="outRest3"></p>
+    </div>
+    <script>
+        var btnPromocao = document.getElementById("btnPromocao");
+        btnPromocao.addEventListener("click", () => {
+            var veiculo = document.getElementById("inVeiculo").value;
+            var preco = Number(document.getElementById("inPreco").value);
+            var outResp1 = document.getElementById("outRest1");
+            var outResp2 = document.getElementById("outRest2");
+            var outResp3 = document.getElementById("outRest3");
+
+            var entrada = preco / 2;
+            var parcelamento = (preco / 2) / 12;
+
+            outResp1.innerText = "Promoção: " + veiculo;
+            outResp2.innerText = "Entrada de R$: " + entrada;
+            outResp3.innerText = "+ 12x de R$: " + parcelamento
+
+        })
+    </script>       
+</body>
+</html>

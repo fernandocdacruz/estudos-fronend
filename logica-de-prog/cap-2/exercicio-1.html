@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora</title>
+    <link rel="stylesheet" href="exercicio-1.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Video Locadora JS !!!!</h1>
+        <p>Título do filme: <input type="text" id="inNome"></p>
+        <p>Duração do filme(min): <input type="text" id="inDuracao"></p>
+        <input type="button" value="Converter em horas e minutos" id="converter">
+        <p id="outResp1"></p>
+        <p id="outResp2"></p>
+    </div>
+    <script>
+        btnConverter = document.getElementById("converter");
+
+        btnConverter.addEventListener("click", () => {
+            
+            var inNome = document.getElementById("inNome");
+            var inDuracao = document.getElementById("inDuracao");
+            var outResp1 = document.getElementById("outResp1");
+            var outResp2 = document.getElementById("outResp2");
+
+            var nome = inNome.value;
+            var duracao = Number(inDuracao.value);
+
+            var duracaoHoras = Math.floor(duracao / 60);
+            var duracaoMinutos = duracao % 60;
+            
+            outResp1.textContent = nome;
+            outResp2.textContent = duracaoHoras + " hora(s) e " + duracaoMinutos + "minuto(s)"
+        })
+    </script>
+</body>
+</html>
