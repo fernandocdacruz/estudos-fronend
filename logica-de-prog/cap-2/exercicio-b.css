@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: cornflowerblue;
+}
+
+#container {
+    background-color: burlywood;
+    padding: 15px;
+    border-radius: 5px;
+    width: 450px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+label {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 30%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+button {
+    width: 40%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    background-color: greenyellow;
+    transform: scale(1.05)
+}
+
+#resposta {
+    display: none; /* começa escondida */
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+#outResp1 {
+    text-align: center;
+    padding: 20px;
+    width: 70%;
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+

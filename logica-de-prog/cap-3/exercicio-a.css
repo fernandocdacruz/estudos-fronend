@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: lightpink;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 25px;
+}
+
+#form-box {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    margin-bottom: 10px;
+    width: 65%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: lightgreen;
+}
+
+button:hover {
+    background-color: darkgreen;
+    transform: scale(1.05);
+}
+
+#resposta {
+    display: none;              /* ativa flexbox */
+    justify-content: center;    /* centraliza horizontal */
+    align-items: center;        /* centraliza vertical */
+    margin-top: 10px;
+}
+
+#outResp {
+    text-align: center;         /* centraliza o texto dentro do <p> */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
